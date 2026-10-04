@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanley Iheanyi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="brand">
+        <img src="picure/render.png" alt="Stanley Logo" class="logo">
+      </a>
+
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#" class="nav-link active" data-section="home"><span>01</span>Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about"><span>02</span>About</a></li>
+          <li><a href="#services" class="nav-link" data-section="services"><span>03</span>Services</a></li>
+          <li><a href="#portfolio" class="nav-link" data-section="portfolio"><span>04</span>Work</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact"><span>05</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#" class="mob-link" data-close>Home</a></li>
+      <li><a href="#about" class="mob-link" data-close>About</a></li>
+      <li><a href="#services" class="mob-link" data-close>Services</a></li>
+      <li><a href="#portfolio" class="mob-link" data-close>Work</a></li>
+      <li><a href="#contact" class="mob-link" data-close>Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-text">STANLEY</div>
+    <div class="container hero-content">
+      <div class="hero-badge reveal">Available for Hire</div>
+      <h1 class="hero-title reveal">
+        Hi, I'm <em>Stanley</em><br>
+        <span class="typed-wrapper">I build <span id="typed-text" class="typed-accent"></span><span class="typed-cursor">|</span></span>
+      </h1>
+      <p class="hero-sub reveal">Software · Hardware · Electrical Engineer<br>Based in Nigeria &amp; UWS, Scotland</p>
+      <div class="hero-cta reveal">
+        <a href="#portfolio" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong class="count" data-target="5">0</strong><p>Years Exp.</p></div>
+        <div class="stat"><strong class="count" data-target="30">0</strong><p>Projects Done</p></div>
+        <div class="stat"><strong class="count" data-target="15">0</strong><p>Clients</p></div>
+      </div>
+    </div>
+    <div class="hero-img-wrap reveal-right">
+      <div class="hero-img-ring"></div>
+      <img src="picure/stanley ihe.jpg" alt="Stanley Iheanyi" class="hero-img">
+      <div class="hero-img-tag"><i class="fa-solid fa-bolt"></i> Full Stack Dev</div>
+    </div>
+    <div class="scroll-down-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Get to Know</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal-left">
+          <div class="about-photo-deco"></div>
+          <img src="picure/WhatsApp Image 2026-04-10 at 2.37.43 PM.jpeg" alt="Stanley Iheanyi" class="about-photo">
+          <div class="about-photo-caption">
+            <i class="fa-solid fa-location-dot"></i>Nigeria / Scotland 
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <p class="about-intro">Full-Stack developer passionate about UI/UX design, accessibility, and building responsive, high-performance web applications. I blend engineering precision with creative design thinking.</p>
+
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-bar-info"><span>Frontend Development</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-info"><span>UI / UX Design</span><span>82%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-info"><span>Mobile App Dev</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-info"><span>Electrical Engineering</span><span>88%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+          </div>
+
+          <div class="tab-nav" role="tablist">
+            <button class="tab-btn active-tab" data-target="skills" role="tab" aria-selected="true">Skills</button>
+            <button class="tab-btn" data-target="experience" role="tab" aria-selected="false">Experience</button>
+            <button class="tab-btn" data-target="education" role="tab" aria-selected="false">Education</button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel active" id="skills" role="tabpanel">
+              <ul class="about-list">
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>Software / Hardware / Electrical</strong><br><small>Designing web/app interfaces</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>Web Development</strong><br><small>HTML, CSS, JS, React, Node</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>App Development</strong><br><small>Android &amp; iOS applications</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>Electrical Installation</strong><br><small>Conduit wiring &amp; maintenance</small></div></li>
+              </ul>
+            </div>
+            <div class="tab-panel" id="experience" role="tabpanel" hidden>
+              <ul class="about-list">
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2024–2025 · Abia TechHub</strong><br><small>Frontend Developer</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2022–2024 · Slot Nigeria Limited</strong><br><small>Hardware Engineer</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2019–2020 · Mayor Electrical Ltd</strong><br><small>Electrical Engineer</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2017–2018 · DormanLong Construction</strong><br><small>Engineering Intern</small></div></li>
+              </ul>
+            </div>
+            <div class="tab-panel" id="education" role="tabpanel" hidden>
+              <ul class="about-list">
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2026 · UWS Scotland</strong><br><small>MSc Information Technology &amp; Web Development</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2025 · Abia TechHub</strong><br><small>Web Development</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2024 · Slot Limited</strong><br><small>Hardware Certification</small></div></li>
+                <li><i class="fa-solid fa-chevron-right"></i><div><strong>2019 · MOUAU</strong><br><small>B.Eng Electrical/Electronics Engineering</small></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="picure/Ogbonnay_Iheanyi_Chinasa_Frontend_CV.pdf" download class="btn btn-primary mt-16">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">My Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal" style="--delay:0s">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="service-num">01</div>
+          <h3>Web Development</h3>
+          <p>Building responsive, scalable web applications using HTML, CSS, JavaScript, and modern frameworks. Clean code, performance-optimized, cross-browser compatible.</p>
+          <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--delay:.1s">
+          <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="service-num">02</div>
+          <h3>UI / UX Design</h3>
+          <p>Intuitive, engaging interfaces built around user research, wireframing and prototyping. Proficient in Figma, Adobe XD and Sketch.</p>
+          <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--delay:.2s">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="service-num">03</div>
+          <h3>App Design</h3>
+          <p>Designing user interfaces for mobile applications. Intuitive, visually appealing interfaces that enhance engagement with seamless interactions.</p>
+          <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--delay:.3s">
+          <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="service-num">04</div>
+          <h3>Electrical Engineering</h3>
+          <p>Conduit wiring, electrical installation and maintenance. Combining engineering precision with modern technology for reliable solutions.</p>
+          <a href="#contact" class="service-link">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">My Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <article class="portfolio-card reveal" data-category="app" style="--delay:0s">
+          <div class="portfolio-img-wrap">
+            <img src="picure/work-1.png" alt="Social Media App" loading="lazy">
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-btn" aria-label="View Social Media App"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Mobile App</span>
+            <h3>Social Media App</h3>
+            <p>Connects talented people around the world.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="app" style="--delay:.1s">
+          <div class="portfolio-img-wrap">
+            <img src="picure/work-2.png" alt="Music App" loading="lazy">
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-btn" aria-label="View Music App"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Mobile App</span>
+            <h3>Music App</h3>
+            <p>Discover and stream music worldwide.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card reveal" data-category="web" style="--delay:.2s">
+          <div class="portfolio-img-wrap">
+            <img src="picure/work-3.png" alt="Shopping App" loading="lazy">
+            <div class="portfolio-overlay">
+              <a href="#" class="overlay-btn" aria-label="View Shopping App"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">E-Commerce</span>
+            <h3>Online Shopping Web Sites</h3>
+            <p>Shop easily from any device.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center reveal">
+        <a href="#contact" class="btn btn-outline mt-24">See More Work <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:Stanleyiheanyi260@gmail.com">Stanleyiheanyi260@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+447823645609">078 2364 5609</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p>Nigeria &amp; Scotland, UK</p>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="https://www.facebook.com/stanley.iheanyi.7" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Aslag260" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+
+          <a href="picure/Ogbonnay_Iheanyi_Chinasa_Frontend_CV.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Stanley Iheanyi" required>
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+            <span class="btn-loader" hidden><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+          </button>
+          <div class="form-success" id="formSuccess" hidden>
+            <i class="fa-solid fa-circle-check"></i> Thanks! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 <strong>Stanley Iheanyi</strong>. Crafted with <i class="fa-solid fa-heart"></i> &amp; code.</p>
+      <a href="#" class="back-top" id="backTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
